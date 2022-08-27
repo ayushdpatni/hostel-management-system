@@ -1,10 +1,10 @@
 .about-text-center{
     align-items: center;
     align-self: center;
-    padding-left: 460px;
     background-color: #fff;
     width:100%;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .about-us-para{
@@ -19,11 +19,78 @@
     width: 400px;
     margin-top: 0%;
     border-radius: 100%;
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
 .about__content{
     background-color: #fff;
-    padding-left: 140px;
+    padding-left: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
+}
+
+
+/* ----------------footer---------------- */
+
+
+.footer {
+    padding-top: 2rem;
+}
+
+.footer__container {
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.6rem;
+}
+
+.footer__bg{
+    background-color:#fff;
+    padding: 3rem 0 3.5rem;
+}
+
+.footer__title{
+    font-size: 2.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer__subtitle{
+    font-size: 0.875rem;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footer__link:hover{
+    color: black;
+    text-underline-offset: none;
+}
+
+
+.footer__socials {
+    justify-self: center;
+}
+
+.footer__social{
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+}
+
+.footer__social:hover {
+    color: #87B7FF;
+}
+
+.footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+    color: var(--title-color);
 }

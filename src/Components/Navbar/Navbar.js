@@ -2,6 +2,11 @@ import React , {useEffect} from 'react'
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+import { BiArch } from "react-icons/bi";
+import { AiFillHome, AiOutlineLogin, AiFillProfile, AiFillControl } from "react-icons/ai";
+import { BiInfoCircle } from "react-icons/bi";
+import { FaAward } from "react-icons/fa";
+
 
 const Navbar = () => {
 
@@ -45,10 +50,7 @@ const Navbar = () => {
 
   return (
   <nav className="navbar navbar-expand-lg navbar-mainbg">
-    
-      <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        XYZ Hostels
-      </NavLink>
+      <NavLink className="navbar-brand navbar-logo" to="/" exact>< BiArch /> XYZ Hostels</NavLink>
     
     
       <button 
@@ -71,44 +73,34 @@ const Navbar = () => {
             
             <li className="nav-item active">
               <NavLink className="nav-link" to="/" exact>
-                <i 
-                className="fas fa-tachometer-alt">
-                </i> Home
+                <AiFillHome className='navbar-icons'></AiFillHome> Home
               </NavLink>
             </li>
 
             <li className="nav-item">
               <NavLink className="nav-link" to="/achievements" exact>
-                <i 
-                className="far fa-clone">
-                </i>Achievements
+              <FaAward className='navbar-icons'></FaAward> Achievements
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" exact>
-                <i 
-                className="far fa-copy">
-                </i> Fill Complaint
+              <AiFillControl className='navbar-icons'></AiFillControl> Fill Complaint
               </NavLink>
             </li>
             
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about" exact><i className="far fa-address-book"></i>
-              About us
+              <NavLink className="nav-link" to="/about" exact><BiInfoCircle className='navbar-icons'></BiInfoCircle>
+              About Us
               </NavLink> 
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/profile" exact>
-                <i 
-                className="far fa-chart-bar">
-                </i>Profile
+              <AiFillProfile className='navbar-icons'></AiFillProfile> Profile
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Login" exact>
-                <i 
-                className="far fa-chart-bar">
-                </i>Login
+              <AiOutlineLogin className='navbar-icons'></AiOutlineLogin> Login
               </NavLink>
             </li>
         </ul>
