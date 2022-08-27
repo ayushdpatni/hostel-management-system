@@ -10,8 +10,9 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Services from './pages/Service/Services';
-import Testimonial from './pages/Testimonial/Testimonial';
+import Login from './pages/Login/Login';
 import Navbar from './Components/Navbar/Navbar';
+import Profile from './Profile/Profile';
 
 const App = () => {
   return (
@@ -28,11 +29,14 @@ const App = () => {
         <Route path="/service" exact>
           <Services/>
         </Route>
-        <Route path="/testimonial" exact>
-          <Testimonial/>
+        <Route path="/Login" exact>
+          <Login/>
         </Route>
         <Route path="/contact" exact>
           <Contact/>
+        </Route>
+        <Route path="/profile" exact>
+          <Profile/>
         </Route>
         <Redirect to="/" />
       </Switch>

@@ -3,10 +3,7 @@ import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-import "../Login/Login.css"
-import GoogleMapReact from 'google-map-react';
-import './Home.css'
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import './Login.css'
 
 SwiperCore.use([EffectCoverflow, Pagination]);
 // if you want to use array
@@ -22,20 +19,14 @@ const slide_img = [
   "https://swiperjs.com/demos/images/nature-9.jpg",
 ];
 
-const Home = () => {
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
-
+const Login = () => {
   return (
-<div>
+    <div>
       <div>
-      <header className="head-line">.</header>
-        <h3 className="text-center" id="achievements">Our Hostel Achievements</h3>
+        <br />
+        <button type="submit" style={{alignSelf: "center", padding: "20px", marginLeft: "650px", marginBottom: "26px"}}>Login form goes here...</button>
+        <br />
+        <h3 className="text-center" id="#achievements">Our Hostel Images</h3>
       </div>
       <Swiper
         effect={"coverflow"}
@@ -62,30 +53,8 @@ const Home = () => {
           );
         })}
       </Swiper>
-
-
-
-
-      <br></br>
-      <div>
-        <br></br>
-        <h3 className="text-center">Our Location</h3>
-      </div>
-    <div style={{ height: '450px', width: '100%' , alignContent:'center', paddingRight: "120px", paddingTop: "10px",paddingLeft: "120px"}}>
-    <GoogleMapReact
-      bootstrapURLKeys={{ key: "" }}
-      defaultCenter={defaultProps.center}
-      defaultZoom={defaultProps.zoom}
-    >
-      <AnyReactComponent
-        lat={59.955413}
-        lng={30.337844}
-        text="My Marker"
-      />
-    </GoogleMapReact>
-  </div>
-    <p className="hostel-location">University of Pune provides hostel facility to both girls and boys. The hostel facility is granted to the students of the University strictly on the basis of merit. The number of seats for each department depends on the department size.  </p>
     </div>
-  )
-}
-export default Home;
+  );
+};
+
+export default Login;

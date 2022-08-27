@@ -125,9 +125,10 @@ render(){
                                         </input>
                                     </div>
                                     <br></br>
-                                    <button className="btn btn-success" type="submit" onClick={this.saveComplaint} style={{marginRight: "10px",width:"125px"}}>Submit</button>
-                                    <button className="btn btn-danger" onClick={this.cancel.bind} style={{ marginLeft: "10px",width:"145px"}}>Reset</button>
+                                    <button className="submit-button" type="submit" onClick={this.saveComplaint} style={{marginRight: "10px",width:"125px"}}>Submit</button>
+                                    <button className="reset-button" onClick={this.cancel.bind} style={{ marginLeft: "10px",width:"145px"}}>Reset</button>
                                     <br />
+                                    
                                 </form>
                             </div>
                             <script src="https://smtpjs.com/v3/smtp.js"></script>

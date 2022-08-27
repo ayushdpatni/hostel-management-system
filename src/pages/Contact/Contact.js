@@ -5,10 +5,13 @@ const Contact = () => {
   return (
       <div className="container-contact">
         <br />
-        <h1 className='text-center'>Complaint Form</h1>
+        <h2 className='head-text-center'>Complaint Form</h2>
             <div>
                 <StudentComponent/>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
     </div>
   )
 }

@@ -1,0 +1,27 @@
+.about-text-center{
+    align-items: center;
+    align-self: center;
+    padding-left: 460px;
+    background-color: #fff;
+    width:100%;
+    padding-bottom: 10px;
+}
+
+.about-us-para{
+    padding-right: 460px;
+}
+
+.about{
+    background-color: #fff;
+}
+.about__content-img{
+    background-color: #fff;
+    width: 400px;
+    margin-top: 0%;
+    padding-left: 125px;
+}
+
+.about__content{
+    background-color: #fff;
+    padding-left: 100px;
+}
