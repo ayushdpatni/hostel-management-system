@@ -18,10 +18,12 @@
     background-color: #fff;
     width: 400px;
     margin-top: 0%;
-    padding-left: 125px;
+    border-radius: 100%;
+    padding-left: 100px;
 }
 
 .about__content{
     background-color: #fff;
-    padding-left: 100px;
+    padding-left: 140px;
+
 }
