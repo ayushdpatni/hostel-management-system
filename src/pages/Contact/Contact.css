@@ -1,0 +1,13 @@
+.container-contact{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.unsplash.com/photo-1624948456697-31d0ab8bf969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBibHVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-center{
+    color: aliceblue;
+    
+}
