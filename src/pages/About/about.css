@@ -94,3 +94,32 @@
 .footer__social{
     color: var(--title-color);
 }
+
+@media (max-width: 400px) {
+        .about-text-center{
+            background-color: #fff;
+            width:100%;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        
+        .about{
+            background-color: #fff;
+        }
+
+        .about__content-img{
+            background-color: #fff;
+            width: 300px;
+            border-radius: 100%;
+            padding-right: 50px;
+            padding-left: 110px;
+        }
+        
+        .about__content{
+            background-color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 100px;
+            font-size: medium;
+        }       
+}

@@ -1,38 +1,77 @@
-.container-contact{
-    min-height: 100vh;
-    width: 100%;
-    background-color: #87B7FF;
-    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.unsplash.com/photo-1624948456697-31d0ab8bf969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBibHVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80); */
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+    .container-contact{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #87B7FF;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
 
-.head-text-center{
-    color: black;
-    align-items: center;
-    align-self: center;
-    padding-left: 620px;
-}
-.text-center{
-    color: black;
-    font-weight: 300;
-}
+    .head-text-center{
+        color: black;
+        align-items: center;
+        align-self: center;
+        padding-left: 620px;
+    }
+    .text-center{
+        color: black;
+        font-weight: 300;
+    }
 
-.submit-button{
-background-color: rgb(41, 231, 24);
-text-align: center;
-font-style: normal;
-align-self: auto;
-width: 0px;
-height: 43.5px;
+    .submit-button{
+        background-color: #87B7FF;
+        text-align: center;
+        font-style: normal;
+        align-self: auto;
+        width: 0px;
+        height: 43.5px;
+        color: black;
+        border-radius: 20px;
+        }
+    .reset-button{
+        background-color: #27497a;
+        text-align: center;        
+        font-style: normal;
+        align-self: auto;
+        width: 0px;
+        height: 43.5px;
+        color: #fff;
+        border-radius: 20px;            
 }
+    @media (max-width: 400px){
+    .container-contact{
+        background-color: #87B7FF;
+    }
 
-.reset-button{
-    background-color: rgb(231, 24, 24);
-    text-align: center;
-    font-style: normal;
-    align-self: auto;
-    width: 0px;
-    height: 43.5px;
+    .head-text-center{
+        color: black;
+        padding-left: 19%;
+        text-shadow: 3%;
+        padding-bottom: 3%;
+    }
+    .text-center{
+        color: black;
+        font-weight: 300;
+    }
+
+    .submit-button{
+        background-color: #87B7FF;
+        text-align: center;
+        font-style: normal;
+        align-self: auto;
+        width: 0px;
+        height: 43.5px;
+        color: black;
+        border-radius: 20px;
+        }
+    .reset-button{
+        background-color: #27497a;
+        text-align: center;        
+        font-style: normal;
+        align-self: auto;
+        width: 0px;
+        height: 43.5px;
+        color: #fff;
+        border-radius: 20px;            
+    }
 }

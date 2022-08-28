@@ -14,6 +14,38 @@ import Login from './pages/Login/Login';
 import Navbar from './Components/Navbar/Navbar';
 import Profile from './Profile/Profile';
 
+// const home = () => {
+//   return (
+//     <>
+//       <Home />
+//     </>
+//   );
+// };
+
+// const about = () => {
+//   return (
+//     <>
+//       <About />
+//     </>
+//   );
+// };
+
+// const service = () => {
+//   return (
+//     <>
+//       <Services />
+//     </>
+//   );
+// };
+
+// const contact = () => {
+//   return (
+//     <>
+//       <Contact />
+//     </>
+//   );
+// };
+
 const App = () => {
   return (
    <Router>
@@ -43,6 +75,6 @@ const App = () => {
     </main>
    </Router>
   );
-}
+};
 
 export default App;

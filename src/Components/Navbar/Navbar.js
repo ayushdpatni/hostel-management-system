@@ -3,7 +3,7 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 import { BiArch } from "react-icons/bi";
-import { AiFillHome, AiOutlineLogin, AiFillProfile, AiFillControl } from "react-icons/ai";
+import { AiFillHome, AiOutlineLogin, AiFillProfile, AiFillControl, AiOutlineMenu } from "react-icons/ai";
 import { BiInfoCircle } from "react-icons/bi";
 import { FaAward } from "react-icons/fa";
 
@@ -51,15 +51,13 @@ const Navbar = () => {
   return (
   <nav className="navbar navbar-expand-lg navbar-mainbg">
       <NavLink className="navbar-brand navbar-logo" to="/" exact>< BiArch /> XYZ Hostels</NavLink>
-    
-    
       <button 
         className="navbar-toggler"
         onClick={ function(){
           setTimeout(function(){ animation(); });
         }}
         type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i className="fas fa-bars text-white"></i>
+        <AiOutlineMenu/>
       </button>
  
       <div 

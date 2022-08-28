@@ -37,12 +37,12 @@ const Home = () => {
 <div>
       <div>
       <header className="head-line">.</header>
-        <h3 className="text-center" id="achievements">Our Hostel Achievements</h3>
+        <h3 className="home-text-center" id="achievements">Our Hostel Achievements</h3>
       </div>
-      <Swiper
+            <Swiper
         effect={"coverflow"}
         grabCursor={true}
-        initialSlide={1}
+        initialSlide={2}
         centeredSlides={true}
         slidesPerView={3}
         coverflowEffect={{
@@ -51,7 +51,7 @@ const Home = () => {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         pagination={true}
         className="mySwiper"
@@ -64,27 +64,23 @@ const Home = () => {
           );
         })}
       </Swiper>
-
+      <p className="achievement-text">Each of my achievement has signified that I have accomplished something. That accomplishment has made the people around me proud especially my parents. My achievements have made me the person I am today and they form an integral part of my life even if I merely have memories of them.
+      </p>
       <br></br>
 
       <div>
         <br></br>
-        <h3 className="text-center">Our Location</h3>
+        <h3 className="home-text-center">Our Location</h3>
       </div>
-    <div style={{ height: '450px', width: '100%' , alignContent:'center', paddingRight: "120px", paddingTop: "30px",paddingLeft: "120px"}}>
-    <GoogleMapReact
-      bootstrapURLKeys={{ key: "" }}
-      defaultCenter={defaultProps.center}
-      defaultZoom={defaultProps.zoom}
-    >
-      <AnyReactComponent
-        lat={59.955413}
-        lng={30.337844}
-        text="My Marker"
-      />
-    </GoogleMapReact>
+  <p className="hostel-location">University of Pune provides hostel facility to both girls and boys. The hostel facility is granted to the students of the University strictly on the basis of merit. The number of seats for each department depends on the department size.  </p>
+  {/* <div class="row">
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1657299156261-4ce1d0a2cf5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" style={{width: "100%"}} />
   </div>
-    <p className="hostel-location">University of Pune provides hostel facility to both girls and boys. The hostel facility is granted to the students of the University strictly on the basis of merit. The number of seats for each department depends on the department size.  </p>
+  <div class="column">
+    <p>lorem University of Pune provides hostel facility to both girls and boys. The hostel facility is granted to the students of the University strictly on the basis of merit. The number of seats for each department depends on the department size.  </p>
+  </div>
+</div> */}
     < br />
     < br />
 

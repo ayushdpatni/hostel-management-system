@@ -17,6 +17,7 @@ const About = () => {
         <p className='about__content'>Hello there! I'm Ayush.
         </p>
       </div>
+      
       {/* ---------------footer-------------- */}
     <footer className="footer">
             <div className="footer__bg">

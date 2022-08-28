@@ -23,12 +23,12 @@ const slide_img = [
 const Login = () => {
   return (
     <div>
-      <div>
+      <div className="login-button">
         <br />
-        <button type="submit" style={{alignSelf: "center", padding: "20px", marginLeft: "650px", marginBottom: "26px"}}>Login form goes here...</button>
+        <button type="submit" className="login-button" style={{alignSelf: "center", padding: "20px", marginLeft: "650px", marginBottom: "26px"}}>Login form goes here...</button>
         <br />
-        <h3 className="text-center" id="#achievements">Our Hostel Images</h3>
       </div>
+        <h3 className="login-text-center" id="#achievements">Our Hostel Images</h3>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -41,7 +41,7 @@ const Login = () => {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         pagination={true}
         className="mySwiper"
@@ -54,6 +54,10 @@ const Login = () => {
           );
         })}
       </Swiper>
+      <br/>
+      <p className="about-text-content">
+      University of Pune provides hostel facility to both girls and boys. The hostel facility is granted to the students of the University strictly on the basis of merit. The number of seats for each department depends on the department size.  
+      </p>
       <br/>
       <br/>
       <br/>
